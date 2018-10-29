@@ -53,15 +53,12 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
         do {
             try audioSession.setActive(false)
         } catch {
-            os_log("Could not start recording audio", log: OSLog.default, type: .debug)
+            os_log("Could not stop recording audio", log: OSLog.default, type: .debug)
         }
     }
     @IBAction func playButtonTapped(_ sender: UIButton) {
         if (recorder != nil && !recorder.isRecording) {
             do {
-                // Does not work trying to convert URL to string...
-                // let recorderUrlString = StaticString(recorder.url.absoluteString)
-                // os_log("Trying to play audio from \(recorderUrlString)", log: OSLog.default, type: .debug)
                 try player = AVAudioPlayer(contentsOf: recorder.url)
             } catch {
                 os_log("Could not play recorded audio", log: OSLog.default, type: .debug)
