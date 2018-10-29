@@ -23,7 +23,7 @@
 			containerPortal = 27CE9B69216E623F00C060EA /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 27CE9B70216E623F00C060EA;
-			remoteInfo = AudioDemo;
+			remoteInfo = Shaboom;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -127,7 +127,7 @@
 			dependencies = (
 			);
 			name = Shaboom;
-			productName = AudioDemo;
+			productName = Shaboom;
 			productReference = 27CE9B71216E623F00C060EA /* Shaboom.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -145,7 +145,7 @@
 				27CE9B87216E623F00C060EA /* PBXTargetDependency */,
 			);
 			name = ShaboomTests;
-			productName = AudioDemoTests;
+			productName = ShaboomTests;
 			productReference = 27CE9B85216E623F00C060EA /* ShaboomTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
