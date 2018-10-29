@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:AudioDemo.xcodeproj">
+      location = "self:/Users/kyle/Dropbox/code/kyletolle/Shaboom/Shaboom.xcodeproj">
    </FileRef>
 </Workspace>

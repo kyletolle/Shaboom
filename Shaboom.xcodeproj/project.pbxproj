@@ -29,14 +29,14 @@
 
 /* Begin PBXFileReference section */
 		274B265C2183F1EB00522668 /* MyAudioMemo.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = MyAudioMemo.m4a; sourceTree = "<group>"; };
-		27CE9B71216E623F00C060EA /* AudioDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		27CE9B71216E623F00C060EA /* Shaboom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shaboom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27CE9B74216E623F00C060EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27CE9B76216E623F00C060EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		27CE9B79216E623F00C060EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		27CE9B7B216E623F00C060EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		27CE9B7E216E623F00C060EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		27CE9B80216E623F00C060EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		27CE9B85216E623F00C060EA /* AudioDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AudioDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		27CE9B85216E623F00C060EA /* ShaboomTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShaboomTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		27CE9B89216E623F00C060EA /* AudioDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioDemoTests.swift; sourceTree = "<group>"; };
 		27CE9B8B216E623F00C060EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27CE9B952173E73500C060EA /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -74,8 +74,8 @@
 		27CE9B72216E623F00C060EA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				27CE9B71216E623F00C060EA /* AudioDemo.app */,
-				27CE9B85216E623F00C060EA /* AudioDemoTests.xctest */,
+				27CE9B71216E623F00C060EA /* Shaboom.app */,
+				27CE9B85216E623F00C060EA /* ShaboomTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -114,9 +114,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		27CE9B70216E623F00C060EA /* AudioDemo */ = {
+		27CE9B70216E623F00C060EA /* Shaboom */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 27CE9B8E216E623F00C060EA /* Build configuration list for PBXNativeTarget "AudioDemo" */;
+			buildConfigurationList = 27CE9B8E216E623F00C060EA /* Build configuration list for PBXNativeTarget "Shaboom" */;
 			buildPhases = (
 				27CE9B6D216E623F00C060EA /* Sources */,
 				27CE9B6E216E623F00C060EA /* Frameworks */,
@@ -126,14 +126,14 @@
 			);
 			dependencies = (
 			);
-			name = AudioDemo;
+			name = Shaboom;
 			productName = AudioDemo;
-			productReference = 27CE9B71216E623F00C060EA /* AudioDemo.app */;
+			productReference = 27CE9B71216E623F00C060EA /* Shaboom.app */;
 			productType = "com.apple.product-type.application";
 		};
-		27CE9B84216E623F00C060EA /* AudioDemoTests */ = {
+		27CE9B84216E623F00C060EA /* ShaboomTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 27CE9B91216E623F00C060EA /* Build configuration list for PBXNativeTarget "AudioDemoTests" */;
+			buildConfigurationList = 27CE9B91216E623F00C060EA /* Build configuration list for PBXNativeTarget "ShaboomTests" */;
 			buildPhases = (
 				27CE9B81216E623F00C060EA /* Sources */,
 				27CE9B82216E623F00C060EA /* Frameworks */,
@@ -144,9 +144,9 @@
 			dependencies = (
 				27CE9B87216E623F00C060EA /* PBXTargetDependency */,
 			);
-			name = AudioDemoTests;
+			name = ShaboomTests;
 			productName = AudioDemoTests;
-			productReference = 27CE9B85216E623F00C060EA /* AudioDemoTests.xctest */;
+			productReference = 27CE9B85216E623F00C060EA /* ShaboomTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -170,7 +170,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 27CE9B6C216E623F00C060EA /* Build configuration list for PBXProject "AudioDemo" */;
+			buildConfigurationList = 27CE9B6C216E623F00C060EA /* Build configuration list for PBXProject "Shaboom" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -183,8 +183,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				27CE9B70216E623F00C060EA /* AudioDemo */,
-				27CE9B84216E623F00C060EA /* AudioDemoTests */,
+				27CE9B70216E623F00C060EA /* Shaboom */,
+				27CE9B84216E623F00C060EA /* ShaboomTests */,
 			);
 		};
 /* End PBXProject section */
@@ -233,7 +233,7 @@
 /* Begin PBXTargetDependency section */
 		27CE9B87216E623F00C060EA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 27CE9B70216E623F00C060EA /* AudioDemo */;
+			target = 27CE9B70216E623F00C060EA /* Shaboom */;
 			targetProxy = 27CE9B86216E623F00C060EA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -377,7 +377,7 @@
 				DEVELOPMENT_TEAM = 844NRWYPKN;
 				INFOPLIST_FILE = AudioDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.nullsix.AudioDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kyletolle.Shaboom;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -392,7 +392,7 @@
 				DEVELOPMENT_TEAM = 844NRWYPKN;
 				INFOPLIST_FILE = AudioDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.nullsix.AudioDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kyletolle.Shaboom;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -412,7 +412,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AudioDemo.app/AudioDemo";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Shaboom.app/Shaboom";
 			};
 			name = Debug;
 		};
@@ -429,14 +429,14 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AudioDemo.app/AudioDemo";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Shaboom.app/Shaboom";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		27CE9B6C216E623F00C060EA /* Build configuration list for PBXProject "AudioDemo" */ = {
+		27CE9B6C216E623F00C060EA /* Build configuration list for PBXProject "Shaboom" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				27CE9B8C216E623F00C060EA /* Debug */,
@@ -445,7 +445,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		27CE9B8E216E623F00C060EA /* Build configuration list for PBXNativeTarget "AudioDemo" */ = {
+		27CE9B8E216E623F00C060EA /* Build configuration list for PBXNativeTarget "Shaboom" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				27CE9B8F216E623F00C060EA /* Debug */,
@@ -454,7 +454,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		27CE9B91216E623F00C060EA /* Build configuration list for PBXNativeTarget "AudioDemoTests" */ = {
+		27CE9B91216E623F00C060EA /* Build configuration list for PBXNativeTarget "ShaboomTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				27CE9B92216E623F00C060EA /* Debug */,
