@@ -31,7 +31,7 @@
                                 <rect key="frame" x="122" y="200" width="130" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Record"/>
+                                <state key="normal" title="Listen"/>
                                 <connections>
                                     <action selector="recordButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3IK-z3-69W"/>
                                 </connections>
@@ -41,8 +41,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="listenButton" destination="cxs-iO-KBm" id="JLv-eV-WQh"/>
                         <outlet property="playButton" destination="QaM-jm-rLF" id="UMg-DZ-HGv"/>
-                        <outlet property="recordButton" destination="cxs-iO-KBm" id="JLv-eV-WQh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -13,7 +13,7 @@ import os.log
 class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDelegate {
     
     // MARK: Properties
-    @IBOutlet weak var recordButton: UIButton!
+    @IBOutlet weak var listenButton: UIButton!
     @IBOutlet weak var playButton: UIButton!
     var recorder: AVAudioRecorder!
     var player: AVAudioPlayer!
@@ -30,21 +30,21 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
             do {
                 try audioSession.setActive(true)
             } catch {
-                os_log("Could not start recording audio", log: OSLog.default, type: .debug)
+                os_log("Could not start listening...", log: OSLog.default, type: .debug)
             }
 
             // Start recording
             recorder.record()
-            recordButton.setTitle("Stop", for: .normal)
+            listenButton.setTitle("Done", for: .normal)
         } else {
             // Stop recording
             recorder.stop()
-            recordButton.setTitle("Record", for: .normal)
+            listenButton.setTitle("Listen", for: .normal)
 
             do {
                 try audioSession.setActive(false)
             } catch {
-                os_log("Could not stop recording audio", log: OSLog.default, type: .debug)
+                os_log("Could not stop listening...", log: OSLog.default, type: .debug)
             }
         }
         
@@ -55,7 +55,7 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
             do {
                 try player = AVAudioPlayer(contentsOf: recorder.url)
             } catch {
-                os_log("Could not play recorded audio", log: OSLog.default, type: .debug)
+                os_log("Could not play sound...", log: OSLog.default, type: .debug)
             }
             
             player.delegate = self
@@ -127,7 +127,7 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
     // MARK: AVAudioRecorderDelegate
     
     func audioRecorderDidFinishRecording(_ recorder: AVAudioRecorder, successfully flag: Bool) {
-        recordButton.setTitle("Record", for: .normal)
+        listenButton.setTitle("Listen", for: .normal)
         
         playButton.isEnabled = true
     }
@@ -135,7 +135,7 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
     // MARK: AVAudioPlayerDelegate
     
     func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
-        let alert = UIAlertController(title: "Done", message: "Finished playing the recording!", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Done", message: "Finished playing the sound!", preferredStyle: .alert)
         alert.addAction(
             UIAlertAction(title: "OK",
                           style: .default,
