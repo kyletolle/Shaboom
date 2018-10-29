@@ -1,15 +1,15 @@
 //
-//  AudioDemoTests.swift
-//  AudioDemoTests
+//  ShaboomTests.swift
+//  ShaboomTests
 //
 //  Created by Kyle Tolle on 10/10/18.
 //  Copyright © 2018 Kyle Tolle. All rights reserved.
 //
 
 import XCTest
-@testable import AudioDemo
+@testable import Shaboom
 
-class AudioDemoTests: XCTestCase {
+class ShaboomTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

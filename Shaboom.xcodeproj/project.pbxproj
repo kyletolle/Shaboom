@@ -13,7 +13,7 @@
 		27CE9B7A216E623F00C060EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27CE9B78216E623F00C060EA /* Main.storyboard */; };
 		27CE9B7C216E623F00C060EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27CE9B7B216E623F00C060EA /* Assets.xcassets */; };
 		27CE9B7F216E623F00C060EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27CE9B7D216E623F00C060EA /* LaunchScreen.storyboard */; };
-		27CE9B8A216E623F00C060EA /* AudioDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CE9B89216E623F00C060EA /* AudioDemoTests.swift */; };
+		27CE9B8A216E623F00C060EA /* ShaboomTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CE9B89216E623F00C060EA /* ShaboomTests.swift */; };
 		27CE9B962173E73500C060EA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27CE9B952173E73500C060EA /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,7 +37,7 @@
 		27CE9B7E216E623F00C060EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		27CE9B80216E623F00C060EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27CE9B85216E623F00C060EA /* ShaboomTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShaboomTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		27CE9B89216E623F00C060EA /* AudioDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioDemoTests.swift; sourceTree = "<group>"; };
+		27CE9B89216E623F00C060EA /* ShaboomTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShaboomTests.swift; sourceTree = "<group>"; };
 		27CE9B8B216E623F00C060EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27CE9B952173E73500C060EA /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -64,8 +64,8 @@
 		27CE9B68216E623F00C060EA = {
 			isa = PBXGroup;
 			children = (
-				27CE9B73216E623F00C060EA /* AudioDemo */,
-				27CE9B88216E623F00C060EA /* AudioDemoTests */,
+				27CE9B73216E623F00C060EA /* Shaboom */,
+				27CE9B88216E623F00C060EA /* ShaboomTests */,
 				27CE9B72216E623F00C060EA /* Products */,
 				27CE9B942173E73400C060EA /* Frameworks */,
 			);
@@ -80,7 +80,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		27CE9B73216E623F00C060EA /* AudioDemo */ = {
+		27CE9B73216E623F00C060EA /* Shaboom */ = {
 			isa = PBXGroup;
 			children = (
 				27CE9B74216E623F00C060EA /* AppDelegate.swift */,
@@ -91,16 +91,16 @@
 				27CE9B7D216E623F00C060EA /* LaunchScreen.storyboard */,
 				27CE9B80216E623F00C060EA /* Info.plist */,
 			);
-			path = AudioDemo;
+			path = Shaboom;
 			sourceTree = "<group>";
 		};
-		27CE9B88216E623F00C060EA /* AudioDemoTests */ = {
+		27CE9B88216E623F00C060EA /* ShaboomTests */ = {
 			isa = PBXGroup;
 			children = (
-				27CE9B89216E623F00C060EA /* AudioDemoTests.swift */,
+				27CE9B89216E623F00C060EA /* ShaboomTests.swift */,
 				27CE9B8B216E623F00C060EA /* Info.plist */,
 			);
-			path = AudioDemoTests;
+			path = ShaboomTests;
 			sourceTree = "<group>";
 		};
 		27CE9B942173E73400C060EA /* Frameworks */ = {
@@ -224,7 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27CE9B8A216E623F00C060EA /* AudioDemoTests.swift in Sources */,
+				27CE9B8A216E623F00C060EA /* ShaboomTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,7 +375,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 844NRWYPKN;
-				INFOPLIST_FILE = AudioDemo/Info.plist;
+				INFOPLIST_FILE = Shaboom/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kyletolle.Shaboom;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -390,7 +390,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 844NRWYPKN;
-				INFOPLIST_FILE = AudioDemo/Info.plist;
+				INFOPLIST_FILE = Shaboom/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kyletolle.Shaboom;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -406,9 +406,9 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 844NRWYPKN;
-				INFOPLIST_FILE = AudioDemoTests/Info.plist;
+				INFOPLIST_FILE = ShaboomTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.nullsix.AudioDemoTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kyletolle.ShaboomTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -423,9 +423,9 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 844NRWYPKN;
-				INFOPLIST_FILE = AudioDemoTests/Info.plist;
+				INFOPLIST_FILE = ShaboomTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.nullsix.AudioDemoTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kyletolle.ShaboomTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
