@@ -14,7 +14,6 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
     
     // MARK: Properties
     @IBOutlet weak var recordButton: UIButton!
-    @IBOutlet weak var stopButton: UIButton!
     @IBOutlet weak var playButton: UIButton!
     var recorder: AVAudioRecorder!
     var player: AVAudioPlayer!
@@ -26,35 +25,30 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
             player.stop()
         }
         
+        let audioSession = AVAudioSession.sharedInstance()
         if (recorder != nil && !recorder.isRecording) {
-            let audioSession = AVAudioSession.sharedInstance()
             do {
                 try audioSession.setActive(true)
             } catch {
                 os_log("Could not start recording audio", log: OSLog.default, type: .debug)
             }
-            
+
             // Start recording
             recorder.record()
-            recordButton.setTitle("Pause", for: .normal)
+            recordButton.setTitle("Stop", for: .normal)
         } else {
-            // Pause recording
-            recorder.pause()
+            // Stop recording
+            recorder.stop()
             recordButton.setTitle("Record", for: .normal)
+
+            do {
+                try audioSession.setActive(false)
+            } catch {
+                os_log("Could not stop recording audio", log: OSLog.default, type: .debug)
+            }
         }
         
-        stopButton.isEnabled = true
         playButton.isEnabled = false
-    }
-    @IBAction func stopButtonTapped(_ sender: UIButton) {
-        recorder.stop()
-        
-        let audioSession = AVAudioSession.sharedInstance()
-        do {
-            try audioSession.setActive(false)
-        } catch {
-            os_log("Could not stop recording audio", log: OSLog.default, type: .debug)
-        }
     }
     @IBAction func playButtonTapped(_ sender: UIButton) {
         if (recorder != nil && !recorder.isRecording) {
@@ -73,8 +67,7 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        // Disable the stop and play buttons when app launches
-        stopButton.isEnabled = false
+        // Disable the play button when app launches
         playButton.isEnabled = false
         
         // Use this file url when you want to read from an existing file...
@@ -136,7 +129,6 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
     func audioRecorderDidFinishRecording(_ recorder: AVAudioRecorder, successfully flag: Bool) {
         recordButton.setTitle("Record", for: .normal)
         
-        stopButton.isEnabled = false
         playButton.isEnabled = true
     }
     
