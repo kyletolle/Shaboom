@@ -20,7 +20,7 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
     
     // MARK: Actions
     
-    @IBAction func recordButtonTapped(_ sender: UIButton) {
+    @IBAction func listenButtonTapped(_ sender: UIButton) {
         if (player != nil && player.isPlaying) {
             player.stop()
         }
@@ -84,7 +84,6 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
         // Get the player ready
         player.delegate = self
         player.prepareToPlay()
-        //player.play()
         
         // Set up the audio session
         let session = AVAudioSession.sharedInstance()
