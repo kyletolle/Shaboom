@@ -46,6 +46,17 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
             } catch {
                 os_log("Could not stop listening...", log: OSLog.default, type: .debug)
             }
+
+            
+            if (recorder != nil) {
+                // Let's get the file URL for the recorder's audio snippet
+                let url_string = String(describing: recorder!.url)
+                // Finally figured out how to log runtime stuff in swift:
+                // https://stackoverflow.com/questions/53025698/using-os-log-to-log-function-arguments-or-other-dynamic-data
+                os_log("file url: %@", log: OSLog.default, type: .debug, url_string)
+            }
+            // Here is where we want to get the audio data out of the file
+            // And send it to the web server.
         }
         
         playButton.isEnabled = false
